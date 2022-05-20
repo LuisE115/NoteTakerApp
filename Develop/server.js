@@ -31,9 +31,15 @@ app.post('/api/notes', (req, res) => {
 
   const newNote = {
     title: req.body.title,
-    text: req.body,text,
-    id: id
-  }
+    text: req.body.text,
+    id: uuid(),
+  };
+  const activeNote = notes.concat(newNote);
+  notes.push(newNote);
+  fs.writeFile(__dirname + "/db/db.json", JSON.stringify(activeNote), (err => {
+    console.log(err);
+  }))
+  res.json(newNote);
 })
 
 app.listen(PORT, () =>
