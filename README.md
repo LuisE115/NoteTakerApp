@@ -20,6 +20,6 @@ Open command line and enter 'npm start', app would be located at port: 3001 for 
 
 ## Preview
 
-![Page preview](./Develop/public/assets/preview/preview1.jpg)
+![Page preview](./public/assets/preview/preview1.jpg)
 
-![Page preview](./Develop/public/assets/preview/preview2.jpg)
+![Page preview](./public/assets/preview/preview2.jpg)
