@@ -4,8 +4,8 @@ const fs = require('fs');
 const notes = require('./db/db.json');
 // Unique id helper
 const uuid = require('./helpers/uuid');
-
-const PORT = 3001;
+// HEROKU PORT 
+const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.json());
